@@ -1,0 +1,41 @@
+{
+  "name": "claude-spec-first-workflow",
+  "version": "1.3.0",
+  "description": "A comprehensive Claude Code workflow for specification-first development with intelligent auto-configuration, dependency mapping, and rollback strategies",
+  "keywords": [
+    "claude-code",
+    "workflow",
+    "specification-first",
+    "clean-architecture",
+    "solid-principles",
+    "development-workflow",
+    "code-quality",
+    "testing",
+    "documentation"
+  ],
+  "author": "Specification-First Workflow Contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR-USERNAME/claude-spec-first-workflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR-USERNAME/claude-spec-first-workflow/issues"
+  },
+  "homepage": "https://github.com/YOUR-USERNAME/claude-spec-first-workflow#readme",
+  "files": [
+    ".claude/",
+    "LICENSE",
+    "README.md",
+    "INSTALL.md",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md"
+  ],
+  "scripts": {
+    "install-plugin": "echo 'Copy .claude/workflows/spec-first to your project: cp -r .claude/workflows/spec-first YOUR_PROJECT/.claude/workflows/'",
+    "verify": "test -f .claude/workflows/spec-first/manifest.json && echo 'Plugin structure verified ✅' || echo 'Error: Plugin structure invalid ❌'"
+  },
+  "engines": {
+    "claude-code": ">=1.0.0"
+  }
+}
