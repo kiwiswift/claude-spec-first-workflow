@@ -1,26 +1,23 @@
 # Installation Guide
 
-> **Quick Install**: 2 minutes to get started • **Zero configuration** required • **Works with any tech stack**
+> **Quick Install**: 30 seconds • **Zero configuration** required • **Works with any tech stack**
 
 ## 🚀 Quick Install (Recommended)
 
-### Step 1: Clone the Repository
+### Using Claude Code's Plugin Manager
+
+The easiest way to install this plugin:
 
 ```bash
-git clone https://github.com/christianogontijo/claude-spec-first-workflow.git
+# In Claude Code, run:
+/plugin install spec-first-workflow@christianogontijo
 ```
 
-### Step 2: Copy to Your Project
+**That's it!** The plugin is installed and ready to use.
 
-```bash
-cp -r claude-spec-first-workflow/.claude/workflows/spec-first YOUR_PROJECT/.claude/workflows/
-```
+### Verify Installation
 
-**Replace `YOUR_PROJECT` with your actual project path.**
-
-### Step 3: Verify Installation
-
-Open Claude Code in your project and type:
+Type `/spec` in Claude Code:
 
 ```bash
 /spec
@@ -41,44 +38,33 @@ Usage: /spec <description>
 
 ## 🔧 Alternative Installation Methods
 
-### Method 1: Symlink (For Plugin Development)
+### Method 1: Local Development/Testing
 
-If you want to develop or contribute to this plugin:
+For plugin development or testing unreleased versions:
 
 ```bash
 # Clone the repo
 git clone https://github.com/christianogontijo/claude-spec-first-workflow.git
 
-# Create symlink in your project
-ln -s $(pwd)/claude-spec-first-workflow/.claude/workflows/spec-first \
-      YOUR_PROJECT/.claude/workflows/spec-first
+# Install from local path
+/plugin install /path/to/claude-spec-first-workflow
 ```
 
-**Benefits**: Changes to the plugin repo immediately reflect in your project.
+**Benefits**: Test changes before they're published.
 
-### Method 2: Git Submodule
+### Method 2: From GitHub Branch
 
-If you want to track plugin versions in your project:
+Install a specific branch or commit:
 
 ```bash
-cd YOUR_PROJECT
+# Install from specific branch
+/plugin install spec-first-workflow@christianogontijo#develop
 
-# Add as submodule
-git submodule add https://github.com/christianogontijo/claude-spec-first-workflow.git \
-                  .claude/plugins/spec-first-workflow
-
-# Create symlink
-ln -s .claude/plugins/spec-first-workflow/.claude/workflows/spec-first \
-      .claude/workflows/spec-first
+# Install from specific commit
+/plugin install spec-first-workflow@christianogontijo#abc1234
 ```
 
-**Benefits**: Version control for plugin updates across your team.
-
-### Method 3: Manual Download
-
-1. Download the [latest release](https://github.com/christianogontijo/claude-spec-first-workflow/releases)
-2. Extract the archive
-3. Copy `.claude/workflows/spec-first/` to your project
+**Benefits**: Test experimental features or specific versions.
 
 ---
 

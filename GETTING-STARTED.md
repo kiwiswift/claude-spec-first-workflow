@@ -10,20 +10,14 @@
 
 ## Step-by-Step Guide
 
-### 1. Install the Plugin (2 minutes)
+### 1. Install the Plugin (30 seconds)
 
 ```bash
-# Clone the plugin
-git clone https://github.com/christianogontijo/claude-spec-first-workflow.git
-
-# Copy to your project
-cp -r claude-spec-first-workflow/.claude/workflows/spec-first YOUR_PROJECT/.claude/workflows/
-
-# Verify installation
-cd YOUR_PROJECT
+# In Claude Code, run:
+/plugin install spec-first-workflow@christianogontijo
 ```
 
-Open Claude Code in your project and type:
+Verify it's installed by typing:
 ```bash
 /spec
 ```

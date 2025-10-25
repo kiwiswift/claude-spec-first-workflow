@@ -16,15 +16,17 @@ This Claude Code plugin enforces a specification-first development workflow that
 
 ### Installation
 
+Claude Code plugins can be installed using the `/plugin` command:
+
 ```bash
-# Clone the plugin
-git clone https://github.com/christianogontijo/claude-spec-first-workflow.git
+# In Claude Code, run:
+/plugin install spec-first-workflow@christianogontijo
 
-# Copy to your project
-cp -r claude-spec-first-workflow/.claude/workflows/spec-first YOUR_PROJECT/.claude/workflows/
-
-# Done! The plugin auto-configures on first use
+# Or for local development/testing:
+/plugin install /path/to/claude-spec-first-workflow
 ```
+
+**That's it!** The plugin auto-configures on first use.
 
 ### Your First Task
 
@@ -146,16 +148,10 @@ your-project/
 │           └── _drafts/                    # Iteration history
 │               ├── TASK-...-DRAFT-01.md
 │               └── TASK-...-DRAFT-02.md
-└── .claude/
-    └── workflows/
-        └── spec-first/
-            ├── steering/
-            │   ├── quality-standards.md         # Your quality gates
-            │   ├── architecture-principles.md   # Your architecture rules
-            │   └── testing-strategy.md          # Your testing requirements
-            ├── commands/                         # Plugin commands
-            ├── templates/                        # Document templates
-            └── manifest.json                     # Plugin metadata
+└── steering/                                # Plugin creates these
+    ├── quality-standards.md                 # Your quality gates
+    ├── architecture-principles.md           # Your architecture rules
+    └── testing-strategy.md                  # Your testing requirements
 ```
 
 ---
@@ -508,9 +504,10 @@ MIT License - see [LICENSE](LICENSE) for details.
 ## 🚀 Get Started Now
 
 ```bash
-git clone https://github.com/christianogontijo/claude-spec-first-workflow.git
-cp -r claude-spec-first-workflow/.claude/workflows/spec-first YOUR_PROJECT/.claude/workflows/
-cd YOUR_PROJECT
+# Install the plugin
+/plugin install spec-first-workflow@christianogontijo
+
+# Use it immediately
 /spec "Your first task description here"
 ```
 

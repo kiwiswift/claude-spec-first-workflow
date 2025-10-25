@@ -1,0 +1,24 @@
+{
+  "name": "spec-first-workflow",
+  "displayName": "Specification-First Development Workflow",
+  "description": "Enforce quality with specification-first development: plan deeply, implement in phases, validate continuously, document everything automatically",
+  "version": "1.3.0",
+  "author": {
+    "name": "Specification-First Workflow Contributors",
+    "url": "https://github.com/christianogontijo/claude-spec-first-workflow"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/christianogontijo/claude-spec-first-workflow"
+  },
+  "homepage": "https://github.com/christianogontijo/claude-spec-first-workflow#readme",
+  "keywords": [
+    "workflow",
+    "specification",
+    "quality",
+    "testing",
+    "documentation",
+    "clean-architecture"
+  ]
+}
