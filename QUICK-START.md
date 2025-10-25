@@ -23,7 +23,7 @@ You: /spec Fix the bulk update feature causing page reload and scroll position l
 Claude will:
 - ✅ Analyze your codebase
 - ✅ Find root causes
-- ✅ Create `docs/tasks/TASK-20251018-BULKOPS001/TASK.md`
+- ✅ Create `docs/tasks/TASK-YYYYMMDD-CODE###/TASK.md`
 - ✅ Propose a phased solution
 
 **3. Review and refine**
@@ -41,10 +41,10 @@ You: "Perfect! Go ahead and implement it."
 **5. Watch it build**
 ```
 Claude:
-✅ Phase 1 complete - Tests: 2859/2859 passing
+✅ Phase 1 complete - Tests: 100% passing
 ✅ Phase 2 complete - TypeScript: 0 errors
 ✅ Phase 3 complete - ESLint: 0 warnings
-✅ Phase 4 complete - Performance: 95% faster!
+✅ All phases complete - Quality gates passed!
 ```
 
 **6. Done!**
@@ -65,13 +65,13 @@ Claude:
 
 ### After `/spec`:
 ```
-docs/tasks/TASK-20251018-BULKOPS001/
+docs/tasks/TASK-YYYYMMDD-CODE###/
 └── TASK.md  # Complete specification
 ```
 
 ### After `/implement`:
 ```
-docs/tasks/TASK-20251018-BULKOPS001/
+docs/tasks/TASK-YYYYMMDD-CODE###/
 ├── TASK.md                    # Original spec
 ├── IMPLEMENTATION-SUMMARY.md  # What was built
 ├── PHASE-1-SUMMARY.md        # Phase details
@@ -88,20 +88,11 @@ Every task completion guarantees:
 - ✅ **Clean Architecture maintained**
 - ✅ **Full documentation**
 
-## Real Example
-
-**TASK-20251018-BULKOPS001**:
-- **Problem**: Bulk updates caused page reload and scroll loss
-- **Solution**: 4-phase optimistic update implementation
-- **Result**: 95% faster (1-2s → <50ms), 0 errors, 2859/2859 tests passing
-
-See `docs/tasks/TASK-20251018-BULKOPS001/` for full example.
-
 ## Next Steps
 
-1. **Try it now**: `/spec "add dark mode to settings"`
+1. **Try it now**: `/spec Add dark mode to settings`
 2. **Read more**: [README.md](./README.md)
-3. **See example**: `docs/tasks/TASK-20251018-BULKOPS001/`
+3. **Configure**: Edit steering documents for your project
 
 ## Tips
 

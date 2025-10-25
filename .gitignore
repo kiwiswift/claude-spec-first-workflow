@@ -35,3 +35,21 @@ steering/testing-strategy.md
 # Keep templates and README
 !steering/README.md
 !steering/*.template.md
+
+# Development/Working Documents
+*-SUMMARY.md
+*-ADDITIONS.md
+NOTES.md
+TODO.md
+SCRATCHPAD.md
+
+# Local testing
+test-projects/
+scratch/
+
+# Generated documentation from usage
+docs/tasks/
+docs/PROGRESS.md
+
+# Other tools/IDEs
+.codex/

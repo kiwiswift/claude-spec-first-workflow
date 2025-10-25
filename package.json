@@ -17,12 +17,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR-USERNAME/claude-spec-first-workflow.git"
+    "url": "https://github.com/christianogontijo/claude-spec-first-workflow.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR-USERNAME/claude-spec-first-workflow/issues"
+    "url": "https://github.com/christianogontijo/claude-spec-first-workflow/issues"
   },
-  "homepage": "https://github.com/YOUR-USERNAME/claude-spec-first-workflow#readme",
+  "homepage": "https://github.com/christianogontijo/claude-spec-first-workflow#readme",
   "files": [
     ".claude/",
     "LICENSE",

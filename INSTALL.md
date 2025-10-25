@@ -1,40 +1,86 @@
 # Installation Guide
 
-## Quick Install
+> **Quick Install**: 2 minutes to get started • **Zero configuration** required • **Works with any tech stack**
 
-### Option 1: Direct Copy (Recommended)
+## 🚀 Quick Install (Recommended)
 
-1. **Copy the plugin directory to your project:**
-   ```bash
-   cp -r claude-spec-first-workflow/.claude/workflows/spec-first YOUR_PROJECT/.claude/workflows/
-   ```
+### Step 1: Clone the Repository
 
-2. **That's it!** The workflow is now available in your project.
+```bash
+git clone https://github.com/christianogontijo/claude-spec-first-workflow.git
+```
 
-3. **Verify installation:**
-   ```bash
-   # In Claude Code, type:
-   /spec
-   ```
+### Step 2: Copy to Your Project
 
-### Option 2: Clone and Link
+```bash
+cp -r claude-spec-first-workflow/.claude/workflows/spec-first YOUR_PROJECT/.claude/workflows/
+```
 
-1. **Clone this repository:**
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/claude-spec-first-workflow.git
-   cd claude-spec-first-workflow
-   ```
+**Replace `YOUR_PROJECT` with your actual project path.**
 
-2. **Symlink to your project:**
-   ```bash
-   ln -s $(pwd)/.claude/workflows/spec-first YOUR_PROJECT/.claude/workflows/spec-first
-   ```
+### Step 3: Verify Installation
 
-3. **Verify installation:**
-   ```bash
-   # In Claude Code, type:
-   /spec
-   ```
+Open Claude Code in your project and type:
+
+```bash
+/spec
+```
+
+You should see an error asking for a description (this means it's working!):
+
+```
+❌ Error: Problem description required
+
+Usage: /spec <description>
+...
+```
+
+**🎉 Installation complete!** The plugin is now ready to use.
+
+---
+
+## 🔧 Alternative Installation Methods
+
+### Method 1: Symlink (For Plugin Development)
+
+If you want to develop or contribute to this plugin:
+
+```bash
+# Clone the repo
+git clone https://github.com/christianogontijo/claude-spec-first-workflow.git
+
+# Create symlink in your project
+ln -s $(pwd)/claude-spec-first-workflow/.claude/workflows/spec-first \
+      YOUR_PROJECT/.claude/workflows/spec-first
+```
+
+**Benefits**: Changes to the plugin repo immediately reflect in your project.
+
+### Method 2: Git Submodule
+
+If you want to track plugin versions in your project:
+
+```bash
+cd YOUR_PROJECT
+
+# Add as submodule
+git submodule add https://github.com/christianogontijo/claude-spec-first-workflow.git \
+                  .claude/plugins/spec-first-workflow
+
+# Create symlink
+ln -s .claude/plugins/spec-first-workflow/.claude/workflows/spec-first \
+      .claude/workflows/spec-first
+```
+
+**Benefits**: Version control for plugin updates across your team.
+
+### Method 3: Manual Download
+
+1. Download the [latest release](https://github.com/christianogontijo/claude-spec-first-workflow/releases)
+2. Extract the archive
+3. Copy `.claude/workflows/spec-first/` to your project
+
+---
 
 ## First-Time Setup
 
@@ -209,11 +255,14 @@ cp -r .claude/workflows/spec-first/steering /tmp/steering-backup
 rm -rf .claude/workflows/spec-first
 ```
 
-## Support
+## 🆘 Support
 
-- **Issues:** https://github.com/YOUR-USERNAME/claude-spec-first-workflow/issues
-- **Discussions:** https://github.com/YOUR-USERNAME/claude-spec-first-workflow/discussions
-- **Documentation:** See README.md
+Need help? We're here for you:
+
+- **📝 Issues**: [Report a bug](https://github.com/christianogontijo/claude-spec-first-workflow/issues)
+- **💬 Discussions**: [Ask questions](https://github.com/christianogontijo/claude-spec-first-workflow/discussions)
+- **📚 Documentation**: [README.md](README.md)
+- **🚀 Quick Start**: [QUICK-START.md](QUICK-START.md)
 
 ## Next Steps
 
