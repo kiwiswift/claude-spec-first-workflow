@@ -65,13 +65,13 @@ Claude:
 
 ### After `/spec`:
 ```
-docs/tasks/TASK-YYYYMMDD-CODE###/
+docs/tasks/TASK-YYYYMMDD-TYPE###/
 └── TASK.md  # Complete specification
 ```
 
 ### After `/implement`:
 ```
-docs/tasks/TASK-YYYYMMDD-CODE###/
+docs/tasks/TASK-YYYYMMDD-TYPE###/
 ├── TASK.md                    # Original spec
 ├── IMPLEMENTATION-SUMMARY.md  # What was built
 ├── PHASE-1-SUMMARY.md        # Phase details

@@ -1,6 +1,6 @@
-# TASK-YYYYMMDD-CODE###: [Brief Descriptive Title]
+# TASK-YYYYMMDD-TYPE###: [Brief Descriptive Title]
 
-> **Type**: [Bug Fix | Refactoring | Feature]
+> **Type**: [FIX | FEAT | CHORE | REFACTOR | PERF | TEST | DOCS]
 > **Created**: YYYY-MM-DD
 > **Status**: [Draft | Approved | In Progress | Complete]
 
