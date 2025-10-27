@@ -148,7 +148,10 @@ your-project/
 ├── docs/
 │   ├── PROGRESS.md ← Centralized tracking
 │   └── tasks/
-│       └── TASK-20251025-FEAT001/
+│       ├── TASK-20251025-FIX001/        # First bug fix
+│       ├── TASK-20251027-FIX002/        # Second bug fix  
+│       ├── TASK-20251025-FEAT001/       # First feature
+│       └── TASK-20251027-CHORE001/      # First chore task
 │           ├── TASK.md ← Specification
 │           ├── IMPLEMENTATION-SUMMARY.md ← Overall summary
 │           ├── PHASE-1-SUMMARY.md ← Phase details

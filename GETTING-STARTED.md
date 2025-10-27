@@ -56,20 +56,20 @@ Creating specification for: Add utility function...
 Analysis complete:
 ✅ Found existing utilities in src/utils/
 ✅ Identified testing patterns
-✅ Created TASK-20251025-UTIL001
+✅ Created TASK-20251025-FEAT001
 
 Specification created with 2-phase solution:
   Phase 1: Implement sum function with type safety
   Phase 2: Add comprehensive tests
 
-Please review: docs/tasks/TASK-20251025-UTIL001/TASK.md
+Please review: docs/tasks/TASK-20251025-FEAT001/TASK.md
 ```
 
 ### 3. Review the Specification (1 minute)
 
 Open the generated specification:
 ```bash
-cat docs/tasks/TASK-20251025-UTIL001/TASK.md
+cat docs/tasks/TASK-20251025-FEAT001/TASK.md
 ```
 
 You'll see:
@@ -138,7 +138,7 @@ Check what was created:
 cat src/utils/sum.ts
 
 # The documentation
-cat docs/tasks/TASK-20251025-UTIL001/IMPLEMENTATION-SUMMARY.md
+cat docs/tasks/TASK-20251025-FEAT001/IMPLEMENTATION-SUMMARY.md
 
 # The tests
 cat src/utils/__tests__/sum.test.ts
@@ -164,6 +164,28 @@ You experienced the complete Specification-First workflow:
 6. **Documentation** → Auto-generated docs
 
 **No broken code. No missing tests. No incomplete docs.**
+
+---
+
+## 🏷️ Understanding Task Names
+
+Notice the task ID: `TASK-20251025-FEAT001`
+
+- **TASK** - Fixed prefix
+- **20251025** - Today's date (YYYYMMDD)
+- **FEAT** - Automatically detected task type (new feature)
+- **001** - Sequential number for this type
+
+**Task Types:**
+- **FIX** - Bug fixes: "Fix the dashboard not loading"
+- **FEAT** - Features: "Add user authentication" 
+- **CHORE** - Maintenance: "Update dependencies to latest versions"
+- **REFACTOR** - Code restructuring: "Extract validation logic to domain layer"
+- **PERF** - Performance: "Optimize database queries for dashboard"
+- **TEST** - Testing: "Add integration tests for payment flow"
+- **DOCS** - Documentation: "Update API documentation"
+
+The system automatically classifies your description and maintains separate sequences for each type.
 
 ---
 

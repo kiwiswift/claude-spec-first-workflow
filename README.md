@@ -129,6 +129,28 @@ Specifications aren't set in stone:
 | `/setup-steering`      | Configure standards  | First time or updating project standards |
 | `/validate-steering`   | Check steering docs  | After project changes                    |
 
+## 🏷️ Task Naming Convention
+
+Tasks are automatically classified and numbered using the format: `TASK-YYYYMMDD-TYPE###`
+
+### Task Types:
+- **FIX** - Bug fixes and corrections
+- **FEAT** - New features and enhancements  
+- **CHORE** - Maintenance, updates, configuration changes
+- **REFACTOR** - Code restructuring without changing functionality
+- **PERF** - Performance optimizations
+- **TEST** - Test additions or improvements
+- **DOCS** - Documentation updates
+
+### Sequential Numbering:
+Each type maintains its own sequence across all dates:
+- `TASK-20251021-FIX001` → First bug fix
+- `TASK-20251025-FIX002` → Second bug fix (different date, same sequence)
+- `TASK-20251027-FEAT001` → First feature (independent sequence)
+- `TASK-20251027-CHORE001` → First chore task
+
+**The system automatically detects task type from your description and assigns the next sequential number.**
+
 ---
 
 ## 📁 What Gets Created
@@ -140,7 +162,10 @@ your-project/
 ├── docs/
 │   ├── PROGRESS.md                          # Centralized progress tracking
 │   └── tasks/
-│       └── TASK-20251025-FEAT001/
+│       ├── TASK-20251025-FIX001/            # First bug fix
+│       ├── TASK-20251027-FIX002/            # Second bug fix
+│       ├── TASK-20251025-FEAT001/           # First feature
+│       └── TASK-20251027-CHORE001/          # First chore task
 │           ├── TASK.md                      # Complete specification
 │           ├── IMPLEMENTATION-SUMMARY.md    # Overall summary
 │           ├── PHASE-1-SUMMARY.md          # Phase details

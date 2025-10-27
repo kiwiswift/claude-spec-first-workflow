@@ -67,7 +67,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 ### Example 1: Feature Implementation
 
 ```
-feat: implement instant bulk operations with optimistic UI updates - TASK-20251018-BULKOPS001
+feat: implement instant bulk operations with optimistic UI updates - TASK-20251018-FEAT001
 
 Implemented 4-phase solution to fix bulk operation UX issues:
 
@@ -105,7 +105,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 ### Example 2: Bug Fix
 
 ```
-fix: resolve infinite scroll pagination reset issue - TASK-20251019-SCROLL001
+fix: resolve infinite scroll pagination reset issue - TASK-20251019-FIX001
 
 Fixed bug where infinite scroll would reset to page 1 when filtering
 transactions, causing user frustration and lost context.
@@ -132,7 +132,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 ### Example 3: Refactoring
 
 ```
-refactor: extract transaction validation into domain layer - TASK-20251020-VALID001
+refactor: extract transaction validation into domain layer - TASK-20251020-REFACTOR001
 
 Refactored transaction validation logic from infrastructure layer to
 domain layer, improving Clean Architecture compliance and testability.

@@ -2,7 +2,7 @@
 
 **Usage**: `/implement <task-id>`
 
-**Example**: `/implement TASK-20251018-BULKOPS001`
+**Example**: `/implement TASK-20251018-FEAT001`
 
 You are implementing a task based on an existing specification document following the Specification-First Development approach.
 
@@ -41,7 +41,7 @@ Read ALL steering documents in `.claude/workflows/spec-first/steering/`:
 
 ### 2. Read the Specification
 
-- The user will provide a task ID (e.g., TASK-20251018-BULKOPS001)
+- The user will provide a task ID (e.g., TASK-20251018-FEAT001)
 - Read `docs/tasks/[TASK-ID]/TASK.md`
 - Understand all phases, success criteria, and quality requirements
 - Note the Solution Design section for high-level approach
